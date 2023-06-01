@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/mobilLayout">
+
+        <!-- mobil -->
+        <EditText
+            android:id="@+id/merkText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Merk" />
+
+        <EditText
+            android:id="@+id/modelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model" />
+
+
+        <EditText
+            android:id="@+id/bahanBakarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bahan Bakar" />
+
+
+        <EditText
+            android:id="@+id/dijualText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dijual" />
+
+
+        <EditText
+            android:id="@+id/deskripsiText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi" />
+
+        <Button
+            android:id="@+id/mobilButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
