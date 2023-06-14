@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
 
     <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Entitas Mobil"
-    android:textColor="@android:color/black"
+    android:text="Data Mobil"
+    android:textColor="@color/purple_700"
     android:textStyle="bold"
     android:paddingTop="20dp"
     android:paddingLeft="10dp"
@@ -31,9 +32,9 @@
             <!-- Header Row -->
             <TableRow
                 android:id="@+id/headerRow"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/darker_gray"
+                android:background="@color/purple_700"
                 android:layout_marginTop="50dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp">
@@ -77,6 +78,14 @@
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:padding="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Aksi"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
             </TableRow>
 
         </TableLayout>

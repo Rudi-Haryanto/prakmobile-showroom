@@ -12,37 +12,70 @@
         tools:ignore="MissingConstraints"
         android:id="@+id/promoLayout">
 
-        <!-- mobil -->
-        <EditText
-            android:id="@+id/modelText"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Model" />
+            android:hint="Model"
+            android:layout_marginBottom="5dp">
 
-        <EditText
-            android:id="@+id/tanggalAwalText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/modelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tanggal Awal" />
+            android:hint="Tanggal Awal"
+            android:layout_marginBottom="5dp">
 
-        <EditText
-            android:id="@+id/tanggalAkhirText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tanggalAwalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tanggal Akhir" />
+            android:hint="Tanggal Akhir"
+            android:layout_marginBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tanggalAkhirText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        <EditText
-            android:id="@+id/persentaseText"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Persentase" />
+            android:hint="Persentase">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/persentaseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/promoButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
             android:text="Submit" />
 
     </LinearLayout>

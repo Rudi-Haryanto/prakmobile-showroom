@@ -12,44 +12,65 @@
         tools:ignore="MissingConstraints"
         android:id="@+id/mobilLayout">
 
-        <!-- mobil -->
-        <EditText
-            android:id="@+id/merkText"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Merk" />
+            android:hint="Merk"
+            android:layout_marginBottom="5dp">
 
-        <EditText
-            android:id="@+id/modelText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/merkText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Model" />
+            android:hint="Model"
+            android:layout_marginBottom="5dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/modelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <EditText
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
             android:id="@+id/bahanBakarText"
             android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Bahan Bakar"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Checkbox Dijual -->
+        <CheckBox
+            android:id="@+id/dijuaText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Bahan Bakar" />
+            android:text="Dijual" />
 
 
-        <EditText
-            android:id="@+id/dijualText"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Dijual" />
+            android:hint="Deskripsi"
+            android:layout_marginTop="5dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deskripsiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/deskripsiText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Deskripsi" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/mobilButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
             android:text="Submit" />
 
     </LinearLayout>

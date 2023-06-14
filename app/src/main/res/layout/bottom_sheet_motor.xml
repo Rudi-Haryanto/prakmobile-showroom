@@ -12,44 +12,78 @@
         tools:ignore="MissingConstraints"
         android:id="@+id/motorLayout">
 
-        <!-- motor -->
-        <EditText
-            android:id="@+id/modelText"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Model" />
+            android:hint="Model"
+            android:layout_marginBottom="5dp">
 
-        <EditText
-            android:id="@+id/warnaText"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/modelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Warna" />
+            android:hint="Warna"
+            android:layout_marginBottom="5dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/warnaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/kapasitasText"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Kapasitas" />
+            android:hint="Kapasitas"
+            android:layout_marginBottom="5dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kapasitasText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/tanggalRilisText"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tanggal Rilis" />
+            android:hint="Tanggal Rilis"
+            android:layout_marginBottom="5dp">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tanggalRilisText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:focusable="false"
+                android:clickable="true"/>
 
-        <EditText
-            android:id="@+id/hargaText"
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Harga" />
+            android:hint="Harga">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hargaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/motorButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
             android:text="Submit" />
 
     </LinearLayout>
